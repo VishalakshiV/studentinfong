@@ -1,0 +1,25 @@
+<h4> Student Form </h4>
+<form [formGroup]="registerForm" (ngSubmit)="save()">
+    <div >
+        <label>ID:</label>
+        <input type="number" formControlName="id" class="form-control" title="id" [value] = "students ? students.id : null" [attr.disabled]="students?false:disabled">
+    </div>
+    <div>
+        <label>Name:</label>
+        <input type="text" formControlName="name" class="form-control" title="name" [value] = "students ? students.name : null">
+    </div>
+    <div>
+        <label>Age:</label>
+        <input type="number" formControlName="age" class="form-control" title="age" [value] = "students ? students.age : null">
+    </div>
+    <div>
+        <label>Gender:</label>
+        <input type="text" formControlName="gender" class="form-control" title="gender" [value] = "students ? students.gender : null">
+    </div>
+    <div>
+        <label>Class:</label>
+        <input type="number" formControlName="class" class="form-control" title="class" [value] = "students ? students.class : null">
+    </div>
+    <button type="submit">SAVE </button>
+    <button (click)="reset()" type="reset" [attr.disabled]="registerForm.dirty?disabled:false"> RESET </button>
+</form>.

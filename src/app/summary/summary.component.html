@@ -1,0 +1,15 @@
+<h4>Class Summary</h4>
+<table *ngIf="ab !== null" border="border">
+    <tr>
+        <th>class</th>
+        <th>girls</th>
+        <th>boys</th>
+        <th>total count</th>
+    </tr>
+    <tr *ngFor="let i of ab">
+        <td>{{i.std}}</td>
+        <td>{{i.girlsCount}}</td>
+        <td>{{i.boysCount}}</td>
+        <td>{{i.girlsCount + i.boysCount}}</td>
+    </tr>
+</table>

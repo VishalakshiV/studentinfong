@@ -1,0 +1,25 @@
+[
+     {
+      "id": 1,
+      "name": "Basel",
+      "age": 13,
+      "gender": "male",
+      "class": 7
+    },
+    {
+    "id": 1,
+    "name": "jhony",
+    "age": 13,
+    "gender": "male",
+    "class": 7
+    },
+    {
+      "id": 2,
+      "name": "Baseli",
+      "age": 12,
+      "gender": "female",
+      "class": 6
+    }
+  ]
+
+
